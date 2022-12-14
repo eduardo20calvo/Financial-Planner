@@ -30,6 +30,6 @@ The stats of this retirement analysis is shown below:
 
 Using these stats and some functions, the returns on a $20,000 and $30,000 investment were calculated.
 
-There is a 95% chance that an initial investment of $20000 in the portfolio over the next 30 years will end within in the range of $27,154.97 and $371,058.71
+Based on results, there is a 95% chance that an initial investment of $20,000 in the portfolio over the next 30 years will end within in the range of $27,154.97 and $371,058.71
 
 In addition, there is a 95% chance that an initial investment of $30,000.0 in the portfolio over the next 30 years will end within in the range of $40,732.46 and $556,588.07
