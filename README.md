@@ -1,6 +1,6 @@
 # Financial Planner
 
-The purpose of this project was to create a financial analysis tool in which users will be able to visualize their current savings and determine if they have enough reserves for an emergency fund. Also, another financial analysis tool was created to forecast the performance of the user's retirement portfolio in 30 years. These tools make an Alpaca API call via the Alpaca SDK to get historical price data for use in Monte Carlos simulations. The main programming language for these tools is Python.
+The purpose of this project was to create a financial analysis tool in which users will be able to visualize their current savings and determine if they have enough reserves for an emergency fund. Also, another financial analysis tool was created to forecast the performance of the user's retirement portfolio in 30 years. These tools make an Alpaca API call via the Alpaca SDK to get historical price data for use in Monte Carlo simulations. The main programming language for used was Python.
 
 ## Personal Finance Planner
 
@@ -16,5 +16,20 @@ In this example, the user's portfolio has enough money for an emergency fund.
 
 ## Retirement Planning
 
-This financial analysis tool as mentioned could forecast the performance of the user's retirement portfolio in 30 years.
+This financial analysis tool as mentioned could forecast the performance of the user's retirement portfolio in 30 years using a Monte Carlo simulation. The historical price data received from the Alpaca API was organized in a DataFrame. Then a variable was created to call the Monte Carlo Simulation. Once the data was fitted into the model, 500 different simulations were generated that forecasted cumulative returns of each portfolio in 30 years. The outcomes were plotted in the graph below:
 
+![Screenshot 2022-12-14 181734](https://user-images.githubusercontent.com/104874384/207736000-30ed2b96-40d8-4773-abaf-b81deb4447b3.png)
+
+Then the probability distribution/confidence intervals of all 500 simulations were plotted in the graph below:
+
+![Screenshot 2022-12-14 181934](https://user-images.githubusercontent.com/104874384/207736441-becfc9cd-49fc-4f29-9564-a59878704ad4.png)
+
+The stats of this retirement analysis is shown below:
+
+![Screenshot 2022-12-14 182044](https://user-images.githubusercontent.com/104874384/207736453-29498a7c-dae6-4101-9f34-d88e9ffd9a0f.png)
+
+Using these stats and some functions, the returns on a $20,000 and $30,000 investment were calculated.
+
+There is a 95% chance that an initial investment of $20000 in the portfolio over the next 30 years will end within in the range of $27,154.97 and $371,058.71
+
+In addition, there is a 95% chance that an initial investment of $30,000.0 in the portfolio over the next 30 years will end within in the range of $40,732.46 and $556,588.07
